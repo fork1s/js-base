@@ -1,18 +1,51 @@
-// Задание №1
+function task1() { 
+  let num = 0;
 
-let a = 0;
-while (a <= 100) {
-  alert(a++);
+  function checkPrime(num) {
+    let i = 2;
+    let count = 0; 
+    while (i <= num) {
+      if (num % i === 0) {
+        count++;
+      }
+      i++;
+    }
+    return count === 1;
+  }
+
+  while (num <= 100) {
+    if (checkPrime(num)) {
+      console.log(num);
+    }
+    num++;
+  }
 }
 
-// Задание №2
+function task2() {
+  let num = 0;
+  do {
+    if (num === 0) {
+      alert(num + ' - это ноль');
+    }
+    if (num != 0 && num % 2 == 0) {
+      alert(num + ' - это четное число');
+    }
+    if (num != 0 && num % 2 != 0) {
+      alert(num + ' - это нечетное число');
+    }
+    num++;
+  } while (num <= 0);
+}
 
-// Задание №3
+function task3() {
+  for (let i = 1; i <= 9; i++)
+    alert(i);
+}
 
-for(let i = 0; i <= 9; i++)
-alert(i);
-
-// Задание №4
-
-for(let x = 'x'; x != 'xxxxxxxxxxxxxxxxxxxxx'; x = x + 'x')
-console.log(x);
+function task4() {
+  let b = '';
+  for (let i = 1; i <= 20; i++) {
+    b = b + 'x';
+    console.log(a);
+  }
+}
